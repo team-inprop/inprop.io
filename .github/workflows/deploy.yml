@@ -4,6 +4,10 @@ on:
   push:
     branches: ["main"]
 
+  repository_dispatch:
+    types:
+      - trigger-deploy
+
   workflow_dispatch:
 
 permissions:
